@@ -36,9 +36,11 @@ export default create<{ items: Item[] } & Action>((set, get) => ({
       ),
     }), // 切换 done 取反
   setContext: (id, context) =>
+    {
+    if (context.trim() === "") return;
     set({
       items: get().items.map((item) =>
         item.id === id ? { ...item, context } : item
       ), // 修改目标项目的 context
-    }),
+    });},
 }));

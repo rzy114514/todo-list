@@ -57,7 +57,7 @@ const Item: React.FC<Props2> = ({ itemID }) => {
         />
       ) : (
         <p onClick={() => setisEditing(true)} un-w="60%">
-          {value}
+          {items.find(({ id }) => id === itemID)?.context ?? ""}
         </p>
       )}
       <div gap-5 un-flex="~">
