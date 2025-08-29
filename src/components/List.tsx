@@ -67,8 +67,7 @@ const Item: React.FC<Props2> = ({ itemID }) => {
           onChange={() => toggle(itemID)}
         />
         <a
-          font-bold
-          un-text="red-200 hover:red-400"
+          un-text="red-300 hover:red-400"
           text-lg
           onClick={() => remove(itemID)}
         >
