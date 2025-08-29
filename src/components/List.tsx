@@ -16,7 +16,7 @@ type Props2 = {
   itemID: number;
 };
 
-const Item: React.FC<Props> = ({ itemID }) => {
+const Item: React.FC<Props2> = ({ itemID }) => {
   // 编辑状态
   const [isEditing, setisEditing] = useState(false);
   return (
