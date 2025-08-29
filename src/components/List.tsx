@@ -42,6 +42,7 @@ const Item: React.FC<Props2> = ({ itemID }) => {
       un-border="b gray"
       last:border-none
       un-flex="~ justify-around items-center"
+      text-lg
     >
       {isEditing ? (
         <input
