@@ -14,7 +14,7 @@ type Action = {
 };
 
 export default create<{ items: Item[] } & Action>((set, get) => ({
-  items: [] as Item[],
+  items: [{ context: "test", done: true, id: Date.now() }],
   create: (context) => {
     // 去除两端空格
     const trimC = context.trim();
