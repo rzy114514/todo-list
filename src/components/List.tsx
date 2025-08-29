@@ -5,7 +5,7 @@ type Props = {};
 const List: React.FC<Props> = ({}) => {
   return (
     <div un-w="65%" h-14 rd-7 un-shadow="sm gray" max-w-125>
-      <Item id={114514}></Item>
+      <Item itemID={114514}></Item>
     </div>
   );
 };
@@ -13,10 +13,10 @@ const List: React.FC<Props> = ({}) => {
 export default List;
 
 type Props2 = {
-  id: number;
+  itemID: number;
 };
 
-const Item: React.FC<Props> = ({ id }) => {
+const Item: React.FC<Props> = ({ itemID }) => {
   // 编辑状态
   const [isEditing, setisEditing] = useState(false);
   return (
